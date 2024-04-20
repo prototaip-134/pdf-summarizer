@@ -6,9 +6,36 @@ This is a modified version of [ChatPDF](https://www.thesamur.ai/chatpdf-alternat
 
 ### How to run
 
-1. Create a virtual environment in python using `venv` or `conda`.
+1. Clone the repo:
+   ```
+   git clone https://github.com/prototaip-134/pdf-summarizer.git
+   ```
+2. Set up a virtual environment in python using `venv` or `conda`. The following are steps to set up `conda`.
+   
+#### Install MiniConda
+The following instructions are for Linux. For other operating systems, download and install from here.
+```
+curl -sL \
+  "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" > \
+ "Miniconda3.sh"
+```
+Install the .sh file.
+```
+bash Miniconda3.sh
+```
+Remove the installer:
+```
+rm Miniconda3.sh
+```
+#### Creating a virtual environment
+Run the following commands to create a virtual environment and to activate it:
+```
+conda create -n pdfchat python=3.8 -y
+conda activate pdfchat
+```
+Make sure to run `conda activate pdfchat` before running any of the scripts in this repo.
 
-2. Run from the root of the repository assuming that you have already cloned the repo:
+3. Run from the root of the repository assuming that you have already cloned the repo:
    ```
    pip install -r requirements.txt
    ```
