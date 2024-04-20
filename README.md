@@ -1,41 +1,32 @@
 # PDFChat
 
-Chat with any PDF. 
-
-Easily upload the PDF documents you'd like to chat with. Instant answers. Ask questions, extract information, and summarize documents with AI. Sources included.
-
-This is a modified version of[ChatPDF](https://www.thesamur.ai/chatpdf-alternative) or [PDF.ai](https://pdf.ai/) to suit paper summaries.
-
-https://github.com/Anil-matcha/ChatPDF/assets/4326215/65feb017-db88-4334-b535-fd65e81d9724
+This is a modified version of [ChatPDF](https://www.thesamur.ai/chatpdf-alternative) to suit paper summaries for counting cow bites.
 
 ### Getting Started
 
-### How to run (Things might change based on OS)
+### How to run
 
-1. Create a virtual environment in python https://docs.python.org/3/library/venv.html
+1. Create a virtual environment in python using `venv` or `conda`.
 
-2. Run "pip install -r requirements.txt"
+2. Run from the root of the repository assuming that you have already cloned the repo:
+   ```
+   pip install -r requirements.txt
+   ```
 
-3. Set OPENAI_API_KEY environment variable with your openai key
+4. Then run the following to run the frontend server locally:
+   ```
+   streamlit run streamlitui.py
+   ```
+   
+5. Input the OpenAI API key, change/upload pdf file and add a `.` or any character and press `ENTER` to run the summarizer.
+6. *Optional:* You can then also ask questions about the paper or use it to understand the paper better.
 
-4. Run "python main.py"
-
-5. Change pdf file and query in code if you want to try with any other content
-
-To run streamlit app, follow the steps run "streamlit run streamlitui.py"
-
-Parts of the streamlit code is inspired from [here](https://github.com/viniciusarruda/chatpdf)
-
-### Demo link
-
-https://heybot.thesamur.ai/
-
-### Also check
-
-[Chat with Website code](https://github.com/Anil-matcha/Website-to-Chatbot)
-
-[Chat with CSV code](https://github.com/Anil-matcha/Chat-With-Excel)
-
-[Chat with Youtube code](https://github.com/Anil-matcha/Chat-Youtube)
-
-[ChatGPT in Discord code](https://github.com/Anil-matcha/DiscordGPT)
+### Citation
+```
+@misc{Anil-matcha2024,
+    title={ChatPDF},
+    author={Anil-matcha},
+    howpublished = {\url{https://github.com/Anil-matcha/ChatPDF}},
+    year={2024}
+}
+```
