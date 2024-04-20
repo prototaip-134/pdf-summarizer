@@ -35,8 +35,9 @@ conda activate pdfchat
 ```
 Make sure to run `conda activate pdfchat` before running any of the scripts in this repo.
 
-3. Run from the root of the repository assuming that you have already cloned the repo:
+3. Run from the root of the repository, assuming that you have already cloned the repo:
    ```
+   cd pdf-summarizer
    pip install -r requirements.txt
    ```
 
@@ -45,8 +46,9 @@ Make sure to run `conda activate pdfchat` before running any of the scripts in t
    streamlit run streamlitui.py
    ```
    
-5. Input the OpenAI API key, change/upload pdf file and add a `.` or any character and press `ENTER` to run the summarizer.
-6. *Optional:* You can then also ask questions about the paper or use it to understand the paper better.
+5. Input the OpenAI API key, change/upload pdf file and add a `.` or any character and press `ENTER` to run the summarize.
+
+*Optional:* You can then also ask questions about the paper or use it to understand the paper better. Do note that if you want to copy directly from the website, it might be better to set the theme to `Light` from the settings button in the top-right.
 
 ### Citation
 ```
