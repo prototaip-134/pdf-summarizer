@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_chat import message
 from pdfquery import PDFQuery
 
-st.set_page_config(page_title="PDFChat", theme="light")
+st.set_page_config(page_title="PDFChat")
 
 
 def display_messages():
